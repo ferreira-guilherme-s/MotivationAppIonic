@@ -9,9 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="medium">Vamos Começar?</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="container">
+    <div class="input-container">
+      <label for="" class="input-label">Digite seu nome</label>
+      <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+
+    <div class="button-container">
+      <button type="submit" name="button_save" class="submit-button">Salvar</button>
+    </div>
+  </div>
 </ion-content>
